@@ -9,9 +9,20 @@ Ruby gems through bundler right inside your Gemfile.
 
 ## Installation
 
+Install with lazy:
+
+```
+{
+    "jeffrydegrande/bundler-info.nvim",
+    config = function()
+        require("bundler-info").setup()
+    end,
+},
+```
+
 ## Usage
 
-Just open your Gemfile in Neovim, the plugin will automatically display any availabe updates.
+Just open any Gemfile in Neovim, the plugin will automatically display any availabe updates.
 
 ## Contributing
 
