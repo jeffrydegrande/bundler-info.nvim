@@ -1,6 +1,6 @@
 local function find_string_in_buffer(buffer, string_to_find)
     local lines = vim.api.nvim_buf_get_lines(buffer, 0, -1, false)
-    local full_string_to_find = 'gem "' .. string_to_find .. '"'
+    local full_string_to_find = "gem [',\"]" .. string_to_find .. "[',\"]"
 
     for i, line in ipairs(lines) do
         if string.find(line, full_string_to_find) then
